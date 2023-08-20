@@ -1,0 +1,1030 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+}
+
+/* A
+     
+     
+     
+     
+     
+     
+*/
+
+/* B*/
+
+
+.Briefcase {
+    background-color: #252A2E;
+    width: 100%;
+    height: 170vh;
+    padding-top: 45px;
+}
+
+.Briefcase > h2 {
+    font-family: 'Righteous';
+    font-size: 6vw;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.Briefcase .Briefcase-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1000px; 
+    margin: auto;
+}
+
+.Briefcase .Briefcase-content .img {
+    width: 490px;
+    height: 300px;
+    margin: 10px 3px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.Briefcase .Briefcase-content .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .5s ease;
+}
+
+.Briefcase .Briefcase-content .img .overlay {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(28, 182, 152, .90);
+    opacity: 0;
+    z-index: 10;
+    transition: 1.8s;
+    bottom: -100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Briefcase .Briefcase-content .img:hover .overlay {
+    opacity: 1;
+    height: 100%;
+    bottom: 0;
+}
+
+.Briefcase .Briefcase-content .img h4{
+    color: white;
+    font-family: 'Righteous';
+    font-size: 25px;
+    text-align: center;
+}
+
+/* C */
+
+.curriculm{
+    width: 100%;
+    background-color: #1e2326;
+    height: 170vh;
+    padding-top: 40px;
+}
+
+.curriculm>h2{
+    font-family: 'Righteous';
+    font-size: 6vw;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.curriculm .curriculm-information{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.curriculm .row{
+    display: flex;
+    height: 68vh;
+}
+
+.curriculm .row .column{
+    width: 50%;
+    border-radius: 10px;
+    margin: auto;
+    padding: 0 20px;
+    max-width: 800px;
+    height: 580px;
+    margin-right: 29px;
+}
+
+.curriculm .row .column .items{
+    background-color: #131517;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.curriculm-information .row .column:last-child .items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.curriculm .row .column .items i,b,p{
+    color: white;
+}
+
+
+.curriculm .row .column h3{
+    font-size: 40px;
+    font-family: 'Righteous';
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 18px;
+}
+
+.curriculm .row .column ul{
+    list-style: none;
+}
+
+.curriculm .row .column strong{
+    display: block;
+    font-size: 24px;
+    color: #1CB698;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
+.curriculm .row .column li{
+    color: white;
+    font-size: 20px;
+    
+}
+
+.curriculm .row hr{
+    width: 50%;
+    margin: auto;
+}
+
+.curriculm-information .row .column:last-child p{
+    margin-top: 15px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border-left: 2px solid white;
+    border-right:2px solid white;
+    padding: 0 10px;
+    max-width: 300px;
+}
+
+.curriculm-information .row .column:last-child li{
+    font-size: 15px;
+    margin-bottom: 19px;
+}
+
+.curriculm-information .row .column:first-child p{
+    margin-top: 10px;
+}
+
+
+.contact{
+    background-color: #1e2326;
+    width: 100%;
+    height: 140vh;
+    padding-top: 50px;
+}
+
+.contact h2{
+    font-family: 'Righteous';
+    font-size: 6vw;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contact-information{
+    background: linear-gradient(50deg, rgba(40,42,55,1)50%, rgba(40,42,55,0.7)),
+    url("Images/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    max-width: 600px;
+    margin: auto;
+    height: 90vh;
+    border-radius: 20px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+.contact-information input{
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    text-align: center;
+    width: 20vw;
+    
+}
+
+.contact-information input,textarea{
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-information .form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: 77vh;
+    max-width: 400vw;
+    margin-top: 30px;
+}
+
+.contact-information label{
+    color: white;
+    margin-right: 10px;
+    display: block;
+    font-weight: normal;
+}
+
+.contact-information .input{
+    margin-bottom: 20px;
+}
+
+
+.contact-information button{
+    height: 30px;
+    width: 90px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    background-color: #1CB698;
+    color:white;
+}
+
+
+
+.contact-information .form .btn-submit{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+
+/* D*/
+
+
+
+/* E
+    
+
+
+
+
+
+*/
+
+/* F*/
+
+.footer{
+    background: linear-gradient(to top, rgba(30,35,38,.5), rgba(30,35,38,.1));
+    height: 70vh;
+    
+}
+
+/* G
+    
+
+
+
+
+
+*/
+
+/* H */
+    
+
+
+html{
+    scroll-behavior: smooth;
+    transition: .8s ease;
+}
+
+.header-container{
+    background-color: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.header-container header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.header-container .logo a{
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: #1CB698;
+    text-decoration: none;
+}
+
+.header-container header ul{
+    display: flex;
+    list-style: none;
+}
+
+
+
+
+/* I
+    
+
+
+
+
+
+*/
+
+/* J
+    
+
+
+
+
+
+*/
+
+/* K
+    
+
+
+
+
+
+*/
+
+/* L
+    
+
+
+
+
+
+*/
+
+/* M  */
+
+
+.my-information{
+    background-color: #1e2326;
+    color: white;
+    padding: 50px 20px;
+    height: 170vh;
+
+}
+
+.my-information .content-information{
+    max-width: 1000px;
+    margin: auto;
+    padding-top: 45px;
+}
+
+
+.my-information h2{
+    font-size: 6vw;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 50px 0;
+}
+
+.content-information p{
+    font-size: 17px;
+    line-height: 22px;
+    margin-bottom: 90px;
+}
+
+.content-information span:first-child{
+    color: #1CB698;
+    font-weight: bold;
+}
+
+.my-information .row{
+    display: flex;
+}
+
+.my-information .row .column{
+    width: 50%;
+}
+
+
+.my-information .row .column h3{
+    font-size: 34px;
+    font-family: 'Righteous';
+    text-align: start;
+    margin-bottom: 30px;
+}
+
+.my-information .row .column ul{
+    list-style: none;
+}
+
+.my-information .column ul li{
+    margin: 12px 0;
+}
+
+.my-information .column strong{
+    display: inline-block;
+    font-size: 22px;
+    color: #1CB698;
+    width: 190px;
+    margin-bottom: 12px;
+}
+
+
+.my-information .row .column:first-child li{
+    font-size: 16px;
+}
+
+.my-information .column:first-child span{
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #1CB698;
+}
+
+.my-information .intereses-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.my-information .intereses-container .intereses{
+    width: 110px;
+    height: 100px;
+    background-color: #252A2E;
+    border-radius: 15px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: .2s;
+    font-size: 14px;
+}
+
+.my-information .intereses-container .intereses:hover{
+    background-color: #1CB698;
+}
+
+.my-information .intereses-container .intereses i{
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.my-information button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid white;
+    width: fit-content;
+    display: block;
+    margin: 28px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: white;
+    position: relative;
+    z-index: 1;
+    bottom: -45px;
+}
+
+.content-information a:last-child{
+    text-decoration: none;
+}
+
+.my-information button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1.8s;
+    box-shadow: -10px -2px 10px black;
+
+}
+.my-information button:hover .overlay{
+    width: 100%;
+}
+/* N */
+
+
+
+
+
+.navbar a{
+    text-align: none;
+    color: white;
+    margin: 0 15px;
+    padding: 5px;
+    transition: .5s;
+    text-decoration: none;
+    display: flex;
+    position: relative;
+    font-size: 1rem;
+    transition: all .3s ease;
+}
+
+.navbar a:hover{
+    color: #1CB698;
+    transform: translateX(-.4rem);
+    
+}
+
+.navbar a::before {
+    content: "";
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: right;
+    width: 100%;
+    bottom: 0;
+    transition: all .8s ease;
+    height: 2px;
+}
+
+
+.navbar a:hover::before {
+    background-color: white;
+    transform: scaleX(1);
+}
+
+/* O
+    
+
+
+
+
+
+*/
+
+/* P
+    
+
+
+
+
+
+*/
+
+/* Q
+    
+
+
+
+
+
+*/
+
+/* R */
+
+.responsive-nav{
+    background-color: #1CB698;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/* S */
+
+.start{
+    background: linear-gradient(to top, rgba(30,35,38,.5), rgba(30,35,38,1)),
+    url('Images/photo-1606568156390-8f4edb5ef31f.jpg');
+    background-size: cover;
+    height: 90vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    justify-content: center;
+    background-position: center;
+}
+
+/* .start .back{
+    height: inherit;
+    background-color: rgba(0,0,0,.75);
+    background-size: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+} */
+
+
+.start .banner-container{
+    padding: 22px 0;
+    max-width: 500px;
+    text-align: center;
+}
+
+.start .banner-container .headlines, .networks{
+    position: relative;
+    top: 50px;
+}
+
+
+.start .banner-container img{
+    margin-top: 40px;
+    border: 5px solid #1CB698;
+    display: block;
+    width: 67%;
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+    top: 78px;
+    box-shadow: -20px 10px 10px black;
+    
+}
+
+.start .banner-container h1{
+    margin-top: 40px;
+    font-size: 44px;
+    font-family: 'Righteous';
+}
+
+.start .banner-container h2{
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.start .networks a{
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: thin solid white;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    margin: 40px 5px;
+    font-size: 23px;
+    transition: .3s;
+}
+
+
+.networks-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.start .networks a:first-child:hover{
+    background-color: black;
+    transform: scale(1.2);
+    transition: .4s ease;
+
+}
+
+.start .networks a:nth-child(2):hover{
+    background: linear-gradient(to bottom, purple, orange);
+    transform: scale(1.2);
+    transition: .4s ease;
+
+}
+
+.start .networks a:nth-child(3):hover{
+    background-color: #0e76a8 ;
+    transform: scale(1.2);
+    transition: .4s ease;
+
+}
+
+.start .networks a:nth-last-child(2):hover{
+    background-color: red;
+    transform: scale(1.2);
+    transition: .4s ease;
+
+}
+
+.start .networks a:last-child:hover{
+    background-color:green;
+    transform: scale(1.2);
+    transition: .4s ease;
+
+}
+
+.skills{
+    background-color: #252A2E;
+    color: white;
+    padding: 50px 20px;
+
+}
+
+.skills .section-content{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.skills h2{
+    font-size: 6vw;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.skills .row{
+    display: flex;
+}
+
+.skills .column{
+    width: 50%;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.skills .column h3{
+    font-family: 'Righteous';
+    font-size: 2.5vw;
+    margin-bottom: 25px;
+}
+
+.skills .skill>span{
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 1.3vw;
+}
+
+.skills .skill .barra-skill{
+    height: 8px;
+    width: 80%;
+    background-color: #131517;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.skills .skill .progress{
+    background-color: #1CB698;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: inherit;
+}
+
+.skills .skill .barra-skill span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #1CB698;
+    border-radius: 100%;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -15px 0px 10px black;
+}
+
+
+.skills .skill .sc{
+    width: 0%;
+    animation: 2s sc forwards;
+}
+
+@keyframes sc{
+    0%{width: 0;}
+    100%{width: 75%;}
+}
+
+
+
+.skills .skill .scu{
+    width: 0%;
+    animation: 2s scu forwards;
+}
+
+@keyframes scu{
+    0%{width: 0;}
+    100%{width: 64%;}
+}
+
+
+.skills .skill .fl{
+    width: 0%;
+    animation: 2s fl forwards;
+}
+
+@keyframes fl{
+    0%{width: 0;}
+    100%{width: 50%;}
+}
+
+.skills .skill .sn{
+    width: 0%;
+    animation: 2s sn forwards;
+}
+
+@keyframes sn{
+    0%{width: 0;}
+    100%{width: 79%;}
+}
+
+.skills .skill .sn{
+    width: 0%;
+    animation: 2s sn forwards;
+}
+
+@keyframes sn{
+    0%{width: 0;}
+    100%{width: 79%;}
+}
+
+.skills .skill .so{
+    width: 0%;
+    animation: 2s so forwards;
+}
+
+@keyframes so{
+    0%{width: 0;}
+    100%{width: 72%;}
+}
+
+
+.skills .skill .sql{
+    width: 0%;
+    animation: 2s sql forwards;
+}
+
+@keyframes sql{
+    0%{width: 0;}
+    100%{width: 78%;}
+}
+
+
+
+.skills .skill .ses{
+    width: 0%;
+    animation: 2s ses forwards;
+}
+
+@keyframes ses{
+    0%{width: 0;}
+    100%{width: 60%;}
+}
+
+.skills .skill .pho{
+    width: 0%;
+    animation: 2s pho forwards;
+}
+
+@keyframes pho{
+    0%{width: 0;}
+    100%{width: 88%;}
+}
+
+
+.skills .skill .pre{
+    width: 0%;
+    animation: 2s pre forwards;
+}
+
+@keyframes pre{
+    0%{width: 0;}
+    100%{width: 60%;}
+}
+
+.skills .skill .com{
+    width: 0%;
+    animation: 2s com forwards;
+}
+
+@keyframes com{
+    0%{width: 0;}
+    100%{width: 90%;}
+}
+
+.skills .skill .tra{
+    width: 0%;
+    animation: 2s tra forwards;
+}
+
+@keyframes tra{
+    0%{width: 0;}
+    100%{width: 87%;}
+}
+
+
+.skills .skill .cre{
+    width: 0%;
+    animation: 2s cre forwards;
+}
+
+@keyframes cre{
+    0%{width: 0;}
+    100%{width: 99%;}
+}
+
+.skills .skill .ded{
+    width: 0%;
+    animation: 2s ded forwards;
+}
+
+@keyframes ded{
+    0%{width: 0;}
+    100%{width: 89%;}
+}
+
+.skills .skill .pc{
+    width: 0%;
+    animation: 2s pc forwards;
+}
+
+@keyframes pc{
+    0%{width: 0;}
+    100%{width: 70%;}
+}
+
+.skills .skill .ada{
+    width: 0%;
+    animation: 2s ada forwards;
+}
+
+@keyframes ada{
+    0%{width: 0;}
+    100%{width: 70%;}
+}
+
+
+.skills .skill .emp{
+    width: 0%;
+    animation: 2s emp forwards;
+}
+
+@keyframes emp{
+    0%{width: 0;}
+    100%{width: 91%;}
+}
+
+.skills .skill .pow{
+    width: 0%;
+    animation: 2s pow forwards;
+}
+
+@keyframes pow{
+    0%{width: 0;}
+    100%{width: 40%;}
+}
+
+
+
+/* T
+    
+
+
+
+
+
+*/
+
+/* U
+    
+
+
+
+
+
+*/
+
+/* V
+    
+
+
+
+
+
+*/
+
