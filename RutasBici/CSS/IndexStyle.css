@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Bebas+Neue&family=Open+Sans:wght@500&family=Righteous&family=Roboto+Mono:wght@300&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-container {
+    width: 100%;
+    height: 46vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header h1 {
+    font-family: 'Righteous';
+    color: #5DB7DE;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.header h1 a {
+    text-decoration: none;
+    color: #5DB7DE;
+}
+
+.nav {
+    background-color: #3C3C3A;
+    width: 100%;
+    display: flex;
+    height: 33.6vh;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arimo';
+    color: white;
+}
+
+.nav ul li {
+    margin-top: 6px;
+}
+
+.nav ul hr {
+    color: white;
+    width: 20%;
+    margin: 15px 0;
+}
+
+.nav ul li:nth-last-child(2) {
+    background-color: #5DB7DE;
+    padding: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav ul li:last-child {
+    border: 1px solid #5DB7DE;
+    border-radius: 10px;
+    padding: 6px;
+    cursor: pointer;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav ul li:hover:not(:last-child, :nth-last-child(2)) {
+    color: #5DB7DE;
+    transform: translateX(-1rem);
+    transition: 1s;
+}
+
+
+
+.nav ul li a {
+    text-decoration: none;
+    font-family: 'Arimo';
+    color: white;
+    font-weight: 500;
+}
+
+.nav ul li a:hover {
+    color: #5DB7DE;
+}
+
+.nav ul li:last-child:hover,
+.nav ul li:nth-last-child(2):hover {
+    color: #5DB7DE;
+    background-color: white;
+}
+
+.banner {
+    background-image: url(Images/download.jpg);
+    height: 30vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.login {
+    display: flex;
+    margin-top: 10px;
+}
+
+.login li {
+    margin-right: 10px;
+}
+
+.back {
+    background-color: rgba(0, 0, 0, .7);
+    height: inherit;
+    width: inherit;
+    display: flex;
+    color: white;
+    font-family: 'Righteous';
+    font-size: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.back a {
+    border: thin solid white;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    margin-top: 13px;
+}
+
+.back a:hover {
+    background-color: white;
+    color: #3C3C3A;
+}
+
+.banner-2 {
+    background-color: #5DB7DE;
+    height: 30vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    color: white;
+    font-family: 'Righteous';
+    font-size: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.banner-3 {
+    background-color: #3C3C3A;
+    height: 30vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    color: white;
+    font-family: 'Arimo';
+    font-size: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.banner-3-son {
+    max-width: 180px;
+}
+
+.footer-container {
+    background-color: #5DB7DE;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer ul {
+    list-style: none;
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.footer ul li a {
+    color: #3C3C3A;
+    margin: 0 3px;
+}
+
+.name h2 {
+    color: white;
+    font-size: 12px;
+}
+
+.network ul li a:hover {
+    color: #fff;
+}
+
+
+@media (min-width: 600px) {
+    .header-container {
+        display: flex;
+        width: 100%;
+        height: 17vh;
+    }
+
+    .header{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav{
+        display: flex;
+        width: 590px;
+        flex-direction: row;
+        height: 100%;
+        border-bottom-left-radius: 50px;
+    }
+
+    .nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 490px;
+    }
+
+
+    .nav ul .login{
+        margin-left: 10px;
+        margin-bottom: 15px;
+    }
+
+    .nav ul .login li{
+        width: 100px;
+    }
+
+    .nav ul hr{
+        height: 27px;
+        width: 0;
+    }
+
+
+    .header h1{
+        margin-left: 70px;
+    }
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .banner{
+        background-image: none;
+    }
+
+    .general{
+        background-image: url(Images/download.jpg);
+        height: 90vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .banner h2{
+        font-size: 40px;
+        font-weight: 10;
+    }
+
+    .banner h2{
+        padding-bottom: 90px;
+    }
+    .back{
+        height: 100vh;
+    }
+
+    .element{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .element h2{
+        margin-bottom: 0px;
+    }
+
+    .element a{
+        margin-top: -30px;
+    }
+    
+    .banner a{
+        width: 100px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+    }
+
+    .banner-2{
+        height: 90vh;
+        font-size: 32px;
+    }
+    
+    .banner-3{
+        height: 90vh;
+        font-size: 40px;
+        font-family: 'Righteous';
+    }
+
+    .banner-3-son{
+        max-width: 700px;
+    }
+
+    .footer-container{
+        height: 30vh;
+    }
+
+    .network ul li a{
+        font-size: 38px;
+        margin-right: 10px;
+    }
+
+    .name h2{
+        font-size: 32px;
+    }
+
+    .header{
+        background-color: rgba(0, 0, 0, .7);
+    }
+    
+    
+}

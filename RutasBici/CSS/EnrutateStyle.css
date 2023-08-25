@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Bebas+Neue&family=Open+Sans:wght@500&family=Righteous&family=Roboto+Mono:wght@300&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-container {
+    width: 100%;
+    height: 46vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header h1 {
+    font-family: 'Righteous';
+    color: #5DB7DE;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.header h1 a {
+    text-decoration: none;
+    color: #5DB7DE;
+}
+
+.nav {
+    background-color: #3C3C3A;
+    width: 100%;
+    display: flex;
+    height: 33.6vh;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arimo';
+    color: white;
+}
+
+.nav ul li {
+    margin-top: 6px;
+}
+
+.nav ul hr {
+    color: white;
+    width: 20%;
+    margin: 15px 0;
+}
+
+
+
+.nav ul li:hover:not(:last-child, :nth-last-child(2)) {
+    color: #5DB7DE;
+    transform: translateX(-1rem);
+    transition: 1s;
+}
+
+
+
+.nav ul li a {
+    text-decoration: none;
+    font-family: 'Arimo';
+    color: white;
+    font-weight: 500;
+}
+
+.nav ul li a:hover {
+    color: #5DB7DE;
+}
+
+.nav ul li:last-child:hover,
+.nav ul li:nth-last-child(2):hover {
+    color: #5DB7DE;
+    background-color: white;
+}
+
+.user .foto {
+    border-radius: 50%;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+}
+
+.question {
+    background-color: #3C3C3A;
+    width: 100%;
+    height: 30vh;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.question .question-after {
+    max-width: 250px;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+}
+
+.question-after h2 {
+    color: white;
+    font-family: 'Righteous';
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+
+.question-after .btn a {
+    width: 120px;
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.question-after .btn div:first-child {
+    background-color: #5DB7DE;
+}
+
+.question-after .btn div:last-child {
+    border: 2px solid #5DB7DE;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn div {
+    width: 80px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    padding: 0px 10px;
+    margin-right: 10px;
+}
+
+.question-after .btn div:last-child:hover {
+    background-color: white;
+}
+
+.question-after .btn div:last-child a:last-child:hover {
+    color: #5DB7DE;
+}
+
+.question-after .btn div:last-child {
+    border: 2px solid #5DB7DE;
+}
+
+#map {
+    height: 500px;
+    width: 100%;
+}
+
+@media (min-width: 600px) {
+
+    .header {
+        height: 100%;
+        width: 96%;
+        margin-left: 60px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header nav {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        background-color: transparent;
+        margin-left: 290px;
+    }
+
+    .header nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header nav ul li {
+        margin-right: 30px;
+    }
+
+    .header-container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 20vh;
+        margin: auto;
+        background-color: #3C3C3A;
+    }
+
+    .question{
+        width: 50vh;
+        height: 100vh;
+        margin-top: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .container-content{
+        display: flex;
+    }
+
+    #map{
+        height: 100vh;
+    }
+
+    .question-after h2{
+        margin-left: 10px;
+    }
+
+}
