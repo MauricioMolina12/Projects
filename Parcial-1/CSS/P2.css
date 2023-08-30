@@ -1,0 +1,56 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #E4B7E5;
+}
+
+.content img{
+    width: 590px;
+    height: 500px;
+    border-radius: 5px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/Images/Carrousel/vela-aromatica-crepita-woodwick-coastal-sunset-mecha-madera-aromara-pontevedra-2-scaled.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 140vh;
+    width: 100%;
+
+}
+
+.content .dif{
+    background-color: rgba(0,0,0,0.7);
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content h1{
+    color: white;
+    font-family: 'Righteous';
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 90px;
+}
+
+.content p{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    max-width: 500px;
+
+}
