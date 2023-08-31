@@ -382,3 +382,81 @@ html{
     }
 }
 
+@media (min-width:1000px) {
+    .head h1{
+        font-size: 25px;
+    }
+
+    .head{
+        height: 10vh;
+        width: 100vh;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+    }
+
+    .head-container{
+        height: 20vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav ul li a{
+        font-size: 15px;
+        padding-right: 0;
+    }
+
+
+    .introdution .content:first-child h2{
+        font-size: 30px;
+    }
+
+    .introdution .content:first-child p{
+        font-size: 20px;
+    }
+
+    .introdution .content:last-child img{
+        width: 400px;
+        height: 300px;
+    }
+
+    .head-container{
+        background-image: url(/Parcial-1/Images/razones_para-ambientar_tu-hogar_con_velas-aromaticas_de_vaso.webp);
+    }
+
+    .cat h2{
+        font-size: 40px;
+    }
+
+    .cat{
+        height: 140vh;
+    }
+
+    .contact h2{
+        font-size: 60px;
+    }
+
+    .contact{
+        height: 120vh;
+    }
+
+    .contact-information{
+        height: 80vh;
+        padding: 0px;
+        width: 100vw;
+    }
+
+    .contact-information .input{
+        height: 30px;
+        margin-bottom: 50px;
+        padding: 0px;
+    }
+
+    .contact-information .btn-submit button{
+        margin-top: 60px;
+    }
+
+    
+}
+

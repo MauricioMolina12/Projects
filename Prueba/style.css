@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+}
+
+.text, .img{
+    width: 50%;
+}
+
+.text h1{
+    font-size: 60px;
+}
+
+.text p{
+    font-size: 30px;
+}
+
+.img img{
+    width: 400px;
+    height: 100%;
+}
+
+.text{
+    background-color: yellow;
+    box-shadow: 30px 0 2px yellow;
+    z-index: 1;
+}

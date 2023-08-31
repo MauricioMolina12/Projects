@@ -21,6 +21,10 @@ body {
     height: 46vh;
 }
 
+.nav ul li a:active{
+    margin-bottom: 10px solid white;
+}
+
 .header {
     display: flex;
     justify-content: space-around;
